@@ -19,7 +19,9 @@ function Encabezado() {
         <nav className='NavAbajo'>
             <div className="BotonOption">
                 <input type="checkbox" id="btn-switch"></input>
-                <label for="btn-switch" className="lbl-switsch"></label>
+                <label for="btn-switch" className="lbl-switsch">
+                <i class="fas fa-sun"></i>
+                </label>
             </div>
         
         </nav>
