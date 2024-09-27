@@ -76,7 +76,10 @@ function Formulario() {
                 <div className="buttons-container">
                     <button type="submit">Completar Registro</button>
                     <h1>o</h1>
-                    <button type="submit">Regístrate con tu cuenta de Google</button>
+                    <button type="submit">
+                         <img src="/src/assets/Google.png" alt="Google" />
+                        Regístrate con tu cuenta de Google
+                        </button>
                 </div>
             </div>
 
