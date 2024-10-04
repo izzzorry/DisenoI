@@ -1,32 +1,48 @@
+import React from 'react';
+import { useNavigate, Link } from 'react-router-dom'; // Importar useNavigate y Link
 
 function Encabezado() {
-    return (
-        <>
-        <header>
-            
-            <div className="Logo">
+  const navigate = useNavigate(); // Inicializamos useNavigate
+
+  return (
+    <>
+      <header>
+        <div className="Logo">
+          {/* Utilizamos Link para redirigir a la página principal */}
+          <Link to="/">
             <img src="/src/assets/LogoSinFondo.png" alt="Logo BioExpert" />
-            <h1>BioExpert</h1>    
-            </div>
+            </Link>
+            <h1>BioExpert</h1>
+          
+        </div>
 
-            <div className="Botones">
-                <button className="login">Iniciar Sesión</button>
-                <button className="suscripcion">Registrarse</button>
-            </div>
+        <div className="Botones">
+          {/* Botones que navegan a las rutas correspondientes */}
+          <button 
+            className="login" 
+            onClick={() => navigate('/login')} // Redirige a /login
+          >
+            Iniciar Sesión
+          </button>
+          <button 
+            className="suscripcion" 
+            onClick={() => navigate('/registro')} // Redirige a /registro
+          >
+            Registrarse
+          </button>
+        </div>
+      </header>
 
-        </header>
-
-        <nav className='NavAbajo'>
-            <div className="BotonOption">
-                <input type="checkbox" id="btn-switch"></input>
-                <label for="btn-switch" className="lbl-switsch">
-                <i class="fas fa-sun"></i>
-                </label>
-            </div>
-        
-        </nav>
-        </>
-
-    )
+      <nav className="NavAbajo">
+        <div className="BotonOption">
+          <input type="checkbox" id="btn-switch"></input>
+          <label htmlFor="btn-switch" className="lbl-switch">
+            <i className="fas fa-sun"></i>
+          </label>
+        </div>
+      </nav>
+    </>
+  );
 }
-export default Encabezado; 
+
+export default Encabezado;

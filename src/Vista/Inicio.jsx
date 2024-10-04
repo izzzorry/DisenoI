@@ -1,3 +1,5 @@
+import React from 'react';
+import {  Link } from 'react-router-dom'; 
 function Login() {
     return ( 
         <>
@@ -24,7 +26,9 @@ function Login() {
                 {/* Botones de registro */}
                 <div className="buttons-container">
                     <button type="submit">Iniciar</button>
-                    <a href="#">¿No tienes cuenta aún?</a>
+
+                    <Link to="/registro">¿No tienes cuenta aún?</Link>
+                    <a href="#"></a>
                     <h1>o</h1>
                     <button type="submit">
                       <img src="/src/assets/Google.png" alt="Google" />

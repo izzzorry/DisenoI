@@ -1,23 +1,29 @@
-import { useState } from 'react'
-import './App.css'
-import Encabezado from './Vista/Header'
-import Carrusel from './Vista/Carrusel'
-import Formulario from './Vista/Formulario'
-import Login from './Vista/Inicio'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Encabezado from './Vista/Header';
+import Formulario from './Vista/Formulario';
+import Login from './Vista/Inicio';
+import Hero from './Vista/Hero';
+import Terminos from './Vista/Terminos';
+import Perfil from './Vista/UserPage';
+import './App.css'; // Importación de los estilos globales
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <Encabezado>
-      </Encabezado>
-      <Carrusel></Carrusel>
-      <Formulario></Formulario>
-      <Login></Login>
-        
-    </>
-  )
+    <Router>
+      {/* Encabezado global */}
+      <Encabezado />
+      
+      {/* Rutas */}
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/registro" element={<Formulario />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/informacion" element={<Terminos />} />
+        <Route path="/perfil" element={<Perfil />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
