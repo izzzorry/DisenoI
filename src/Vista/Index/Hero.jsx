@@ -9,6 +9,18 @@ function Hero() {
     // Redirigir a la ruta deseada
     navigate('/Beneheart'); 
   };
+  const handleModulosClick = () => {
+    // Redirigir a la ruta deseada
+    navigate('/Modulos'); 
+  };
+  const handleinfoClick = () => {
+    // Redirigir a la ruta deseada
+    navigate('/informacion'); 
+  };
+
+  const handleExternalRedirect = () => {
+    window.location.href = 'https://sitios.uao.edu.co/labs/laboratorio-de-bioinstrumentacion/'; // Cambia esta URL por la ruta externa deseada
+  };
   return (
     <>
     {/* Contenedor principal */}
@@ -28,7 +40,7 @@ function Hero() {
           <img src="/src/assets/LogoSinFondo.png" alt="Icono Monitor" />
           <h2>BioExpert</h2>
           <p>Es un sistema interactivo que contempla módulos que permiten al usuario explorar y aprender...</p>
-          <button className="ver-masA">
+          <button className="ver-masA" onClick={handleinfoClick}>
             <span>Ver más</span>
             <div className="icono-circuloA">
               <i class="fa-solid fa-square-arrow-up-right"></i>
@@ -52,7 +64,7 @@ function Hero() {
         </div>
         <div className="card-body">
           <p>Conoce la disponibilidad de los laboratorios</p>
-          <button className="ver-masA">
+          <button className="ver-masA" onClick={handleExternalRedirect}>
             <span>Ver más</span>
             <div className="icono-circuloA">
               <i class="fa-solid fa-square-arrow-up-right"></i>
@@ -94,7 +106,7 @@ function Hero() {
         <div className="modulo">
           <h2>Desfibrilación Manual</h2>
           <img src="/src/assets/BENEHEART02.jpg" alt="Desfibrilación Manual" />
-          <button className="ver-masA">
+          <button className="ver-masA" onClick={handleModulosClick}>
             <span>Ver más</span>
             <div className="icono-circuloA">
               <i className="fa-solid fa-square-arrow-up-right"></i>
@@ -105,7 +117,7 @@ function Hero() {
         <div className="modulo">
           <h2>Monitorización</h2>
           <img src="/src/assets/BENEHEART03.png" alt="Monitorización" />
-          <button className="ver-masA">
+          <button className="ver-masA" onClick={handleModulosClick}>
             <span>Ver más</span>
             <div className="icono-circuloA">
               <i className="fa-solid fa-square-arrow-up-right"></i>
@@ -116,7 +128,7 @@ function Hero() {
         <div className="modulo">
           <h2>DEA</h2>
           <img src="/src/assets/BENEHEART04.jpg" alt="DEA" />
-          <button className="ver-masA">
+          <button className="ver-masA" onClick={handleModulosClick}>
             <span>Ver más</span>
             <div className="icono-circuloA">
               <i className="fa-solid fa-square-arrow-up-right"></i>
@@ -127,7 +139,7 @@ function Hero() {
         <div className="modulo">
           <h2>Marcapasos</h2>
           <img src="/src/assets/BENEHEART01.jpg" alt="Marcapasos" />
-          <button className="ver-masA">
+          <button className="ver-masA" onClick={handleModulosClick}>
             <span>Ver más</span>
             <div className="icono-circuloA">
               <i className="fa-solid fa-square-arrow-up-right"></i>

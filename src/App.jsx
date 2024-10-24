@@ -9,6 +9,7 @@ import Perfil from './Vista/UserPage/UserPage';
 import './App.css'; // Importación de los estilos globales
 import BeneHeart from './Vista/Beneheart/Beneheart';
 import Monitor3D from './Vista/Modelo/Model';
+import Modulos from './Vista/Modulos/Modulos';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/informacion" element={<Terminos />} />
         <Route path="/perfil" element={<Perfil />} />
         <Route path="/Beneheart" element={<BeneHeart />} />
+        <Route path="/Modulos" element={<Modulos />} />
       </Routes>
     </Router>
   );
