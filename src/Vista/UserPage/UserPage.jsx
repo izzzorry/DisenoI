@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './UserPage.css';
 
 function Perfil() {
     const [userData, setUserData] = useState({

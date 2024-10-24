@@ -1,0 +1,139 @@
+/* PERFIL */
+
+.perfil-container {
+    background: linear-gradient(135deg, #4F70A3 0%, #8A9CD4 100%);
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Inter', sans-serif;
+    color: white;
+    text-align: center;
+  }
+  
+  .perfil-container h1 {
+    font-size: 36px;
+    font-family: "Changa One", sans-serif;
+    font-weight: 500;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .perfil-container h1::before,
+  .perfil-container h1::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 20%;
+    height: 2px;
+    background-color: #fff;
+  }
+  
+  .perfil-container h1::before {
+    left: 0;
+  }
+  
+  .perfil-container h1::after {
+    right: 0;
+  }
+  
+  .perfil-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .perfil-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+  }
+  
+  .perfil-avatar {
+    flex: 0 0 150px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .perfil-avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #A2BDF2;
+  }
+  
+  .perfil-detalles {
+    text-align: left;
+    flex-grow: 1;
+    margin-left: 40px;
+  }
+  
+  .perfil-item {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .perfil-item strong {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .perfil-btn {
+    background-color: #A2BDF2;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-family: "Changa One", sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .perfil-btn:hover {
+    background-color: #3E5B8A;
+  }
+  
+  .cambio-contraseña {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+  }
+  
+  .cambio-contraseña h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    font-size: 16px;
+    color: white;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .cambio-contraseña .perfil-btn {
+    margin-top: 0;
+    width: 100%;
+  }
+  

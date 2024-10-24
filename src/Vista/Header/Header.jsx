@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, Link } from 'react-router-dom'; // Importar useNavigate y Link
+import './Header.css';
 
 function Encabezado() {
   const navigate = useNavigate(); // Inicializamos useNavigate

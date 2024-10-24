@@ -1,3 +1,5 @@
+import './Formulario.css';
+import { useNavigate, Link } from 'react-router-dom'; // Importar useNavigate y Link
 function Formulario() {
     return ( 
         <>
@@ -66,7 +68,7 @@ function Formulario() {
                 {/* Checkbox de términos y condiciones */}
                 <div className="terminos">
                     <input type="checkbox" id="aceptoTerminos" required />
-                    <label htmlFor="aceptoTerminos">Al marcar esta casilla, usted reconoce y acepta que ha leído y comprendido los Términos de Servicio y la Política de Privacidad de BioExpert. Asimismo, acepta estar vinculado por estos documentos y consiente el uso de sus datos personales según lo establecido en nuestra Política de Privacidad. Este consentimiento es necesario para utilizar nuestros servicios de BioExpert.
+                    <label htmlFor="aceptoTerminos">Al marcar esta casilla, usted reconoce y acepta que ha leído y comprendido los <Link to="/informacion" className="enlace-terminos">Términos de Servicio y la Política de Privacidad de BioExpert</Link>. Asimismo, acepta estar vinculado por estos documentos y consiente el uso de sus datos personales según lo establecido en nuestra <Link to="/informacion" className="enlace-terminos" >Política de Privacidad</Link>. Este consentimiento es necesario para utilizar nuestros servicios de BioExpert.
                     </label>
                 </div>
 
